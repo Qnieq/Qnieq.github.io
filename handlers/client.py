@@ -1,5 +1,5 @@
 from aiogram.types import Message
-from bot_cfg import bot, PAYMENT_TOKEN
+from Bot.bot_cfg import bot, PAYMENT_TOKEN
 from aiogram import Dispatcher
 from aiogram.types import LabeledPrice, PreCheckoutQuery, ContentType
 from keyboards.client_button import keyboard
