@@ -22,7 +22,7 @@ body{
 
 .item {
     text-align: center;
-    width: 200px;
+    width: 150px;
 }
 
 .btn{
@@ -44,5 +44,5 @@ body{
 
 .usercard{
     text-align: center;
-    width: 400px;
+    width: 300px;
 }
