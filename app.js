@@ -124,6 +124,7 @@ document.getElementById("btn1").onclick = function(){
             counter.innerHTML = volumeBtn1
         }
     if (volumeBtn1 == 0){
+        MainBtn--;
         if(MainBtn == 0){
             tg.MainButton.hide();
         }
@@ -177,6 +178,7 @@ document.getElementById("btn2").onclick = function(){
             counter.innerHTML = volumeBtn2
         }
     if (volumeBtn2 == 0){
+        MainBtn--;
         if(MainBtn == 0){
             tg.MainButton.hide();
         }
@@ -230,6 +232,7 @@ document.getElementById("btn3").onclick = function(){
             counter.innerHTML = volumeBtn3
         }
     if (volumeBtn3 == 0){
+        MainBtn--;
         if(MainBtn == 0){
             tg.MainButton.hide();
         }
@@ -283,6 +286,7 @@ document.getElementById("btn4").onclick = function(){
             counter.innerHTML = volumeBtn4
         }
     if (volumeBtn4 == 0){
+        MainBtn--;
         if(MainBtn == 0){
             tg.MainButton.hide();
         }
@@ -336,6 +340,7 @@ document.getElementById("btn5").onclick = function(){
             counter.innerHTML = volumeBtn5
         }
     if (volumeBtn5 == 0){
+        MainBtn--;
         if(MainBtn == 0){
             tg.MainButton.hide();
         }
@@ -389,6 +394,7 @@ document.getElementById("btn6").onclick = function(){
             counter.innerHTML = volumeBtn6
         }
     if (volumeBtn6 == 0){
+        MainBtn--;
         if(MainBtn == 0){
             tg.MainButton.hide();
         }
