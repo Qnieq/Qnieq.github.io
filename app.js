@@ -7,12 +7,12 @@ tg.MainButton.color = '#2cab37';
 
 let MainBtn = 0;
 
-let item1 = "";
-let item2 = "";
-let item3 = "";
-let item4 = "";
-let item5 = "";
-let item6 = "";
+let item1 = "none";
+let item2 = "none";
+let item3 = "none";
+let item4 = "none";
+let item5 = "none";
+let item6 = "none";
 
 
 
@@ -417,7 +417,7 @@ document.getElementById("btn6").onclick = function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    tg.sendData(item1+"|"+volumeBtn1 + "/" + item2+"|"+volumeBtn2 + "/" + item3+"|"+volumeBtn3 + "/" + item4+"|"+volumeBtn4 + "/" + item5+"|"+volumeBtn5 + "/" + item6+"|"+volumeBtn6);
+    tg.sendData(item1+"|"+volumeBtn1 + " / " + item2+"|"+volumeBtn2 + " / " + item3+"|"+volumeBtn3 + " / " + item4+"|"+volumeBtn4 + " / " + item5+"|"+volumeBtn5 + " / " + item6+"|"+volumeBtn6);
 });
 
 
