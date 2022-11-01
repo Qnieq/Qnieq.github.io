@@ -24,7 +24,7 @@ let btn5 = document.getElementById("btn5");
 let btn6 = document.getElementById("btn6");
 
 btn1.addEventListener("click", function(){
-    item1 = "1";
+    item1 = "burger";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
@@ -32,7 +32,7 @@ btn1.addEventListener("click", function(){
     }
 });
 btn2.addEventListener("click", function(){
-    item2 = "2";
+    item2 = "fries";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
@@ -41,7 +41,7 @@ btn2.addEventListener("click", function(){
     
 });
 btn3.addEventListener("click", function(){
-    item3 = "3";
+    item3 = "nuggets";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
@@ -49,7 +49,7 @@ btn3.addEventListener("click", function(){
     }
 });
 btn4.addEventListener("click", function(){
-    item4 = "4";
+    item4 = "sause";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
@@ -57,7 +57,7 @@ btn4.addEventListener("click", function(){
     }
 });
 btn5.addEventListener("click", function(){
-    item5 = "5";
+    item5 = "cocktails";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
@@ -65,7 +65,7 @@ btn5.addEventListener("click", function(){
     }
 });
 btn6.addEventListener("click", function(){
-    item6 = "6";
+    item6 = "ice cream";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
