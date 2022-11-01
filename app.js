@@ -34,33 +34,43 @@ btn1.addEventListener("click", function(){
 btn2.addEventListener("click", function(){
     item2 = "2";
     MainBtn += 1;
-    tg.MainButton.setText("VIEW ORDER");
-    tg.MainButton.show();
+    if(MainBtn >= 1){
+        tg.MainButton.setText("VIEW ORDER");
+        tg.MainButton.show();
+    }
     
 });
 btn3.addEventListener("click", function(){
     item3 = "3";
     MainBtn += 1;
-    tg.MainButton.setText("VIEW ORDER");
-    tg.MainButton.show();
+    if(MainBtn >= 1){
+        tg.MainButton.setText("VIEW ORDER");
+        tg.MainButton.show();
+    }
 });
 btn4.addEventListener("click", function(){
     item4 = "4";
     MainBtn += 1;
-    tg.MainButton.setText("VIEW ORDER");
-    tg.MainButton.show();
+    if(MainBtn >= 1){
+        tg.MainButton.setText("VIEW ORDER");
+        tg.MainButton.show();
+    }
 });
 btn5.addEventListener("click", function(){
     item5 = "5";
     MainBtn += 1;
-    tg.MainButton.setText("VIEW ORDER");
-    tg.MainButton.show();
+    if(MainBtn >= 1){
+        tg.MainButton.setText("VIEW ORDER");
+        tg.MainButton.show();
+    }
 });
 btn6.addEventListener("click", function(){
     item6 = "6";
     MainBtn += 1;
-    tg.MainButton.setText("VIEW ORDER");
-    tg.MainButton.show();
+    if(MainBtn >= 1){
+        tg.MainButton.setText("VIEW ORDER");
+        tg.MainButton.show();
+    }
 });
 
 let volumeBtn1 = 0;
@@ -76,8 +86,6 @@ let product3 = document.getElementById("product3");
 let product4 = document.getElementById("product4");
 let product5 = document.getElementById("product5");
 let product6 = document.getElementById("product6");
-//     if(MainBtn == 0){
-//         tg.MainButton.hide()
 
 
 document.getElementById("btn1").onclick = function(){
@@ -116,6 +124,9 @@ document.getElementById("btn1").onclick = function(){
             counter.innerHTML = volumeBtn1
         }
     if (volumeBtn1 == 0){
+        if(MainBtn == 0){
+            tg.MainButton.hide();
+        }
         newBtnMinus1.remove();
         newBtnPlus1.remove();
         counter.remove();
@@ -166,6 +177,9 @@ document.getElementById("btn2").onclick = function(){
             counter.innerHTML = volumeBtn2
         }
     if (volumeBtn2 == 0){
+        if(MainBtn == 0){
+            tg.MainButton.hide();
+        }
         newBtnMinus2.remove();
         newBtnPlus2.remove();
         counter.remove();
@@ -216,6 +230,9 @@ document.getElementById("btn3").onclick = function(){
             counter.innerHTML = volumeBtn3
         }
     if (volumeBtn3 == 0){
+        if(MainBtn == 0){
+            tg.MainButton.hide();
+        }
         newBtnMinus3.remove();
         newBtnPlus3.remove();
         counter.remove();
@@ -266,6 +283,9 @@ document.getElementById("btn4").onclick = function(){
             counter.innerHTML = volumeBtn4
         }
     if (volumeBtn4 == 0){
+        if(MainBtn == 0){
+            tg.MainButton.hide();
+        }
         newBtnMinus4.remove();
         newBtnPlus4.remove();
         counter.remove();
@@ -316,6 +336,9 @@ document.getElementById("btn5").onclick = function(){
             counter.innerHTML = volumeBtn5
         }
     if (volumeBtn5 == 0){
+        if(MainBtn == 0){
+            tg.MainButton.hide();
+        }
         newBtnMinus5.remove();
         newBtnPlus5.remove();
         counter.remove();
@@ -366,6 +389,9 @@ document.getElementById("btn6").onclick = function(){
             counter.innerHTML = volumeBtn6
         }
     if (volumeBtn6 == 0){
+        if(MainBtn == 0){
+            tg.MainButton.hide();
+        }
         newBtnMinus6.remove();
         newBtnPlus6.remove();
         counter.remove();
