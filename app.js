@@ -6,7 +6,6 @@ tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
 let MainBtn = 0;
-
 if(MainBtn == 0){
     tg.MainButton.hide()
 } else {
@@ -34,10 +33,12 @@ let btn6 = document.getElementById("btn6");
 btn1.addEventListener("click", function(){
     item1 = "1";
     MainBtn += 1;
+    console.log(MainBtn)
 });
 btn2.addEventListener("click", function(){
     item2 = "2";
     MainBtn += 1;
+    console.log(MainBtn)
 });
 btn3.addEventListener("click", function(){
     item3 = "3";
@@ -62,9 +63,6 @@ let volumeBtn3 = 0;
 let volumeBtn4 = 0;
 let volumeBtn5 = 0;
 let volumeBtn6 = 0;
-
-//подключить сюда tg и отправлять значения переменных, бот будет принимать номер продукта и его колво,
-//которое будет перемножаться с ценой на товар
 
 let product1 = document.getElementById("product1");
 let product2 = document.getElementById("product2");
