@@ -65,7 +65,7 @@ btn5.addEventListener("click", function(){
     }
 });
 btn6.addEventListener("click", function(){
-    item6 = "ice cream";
+    item6 = "ice_cream";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
