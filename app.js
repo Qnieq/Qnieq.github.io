@@ -26,9 +26,10 @@ let btn6 = document.getElementById("btn6");
 btn1.addEventListener("click", function(){
     item1 = "1";
     MainBtn += 1;
-    tg.MainButton.setText("VIEW ORDER");
-    tg.MainButton.show();
-    
+    if(MainBtn >= 1){
+        tg.MainButton.setText("VIEW ORDER");
+        tg.MainButton.show();
+    }
 });
 btn2.addEventListener("click", function(){
     item2 = "2";
