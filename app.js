@@ -6,13 +6,6 @@ tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
 let MainBtn = 0;
-if(MainBtn == 0){
-    tg.MainButton.hide()
-} else {
-    tg.MainButton.setText("VIEW ORDER");
-    tg.MainButton.show();
-}
-
 
 let item1 = "";
 let item2 = "";
@@ -33,28 +26,40 @@ let btn6 = document.getElementById("btn6");
 btn1.addEventListener("click", function(){
     item1 = "1";
     MainBtn += 1;
-    console.log(MainBtn)
+    tg.MainButton.setText("VIEW ORDER");
+    tg.MainButton.show();
+    
 });
 btn2.addEventListener("click", function(){
     item2 = "2";
     MainBtn += 1;
-    console.log(MainBtn)
+    tg.MainButton.setText("VIEW ORDER");
+    tg.MainButton.show();
+    
 });
 btn3.addEventListener("click", function(){
     item3 = "3";
     MainBtn += 1;
+    tg.MainButton.setText("VIEW ORDER");
+    tg.MainButton.show();
 });
 btn4.addEventListener("click", function(){
     item4 = "4";
     MainBtn += 1;
+    tg.MainButton.setText("VIEW ORDER");
+    tg.MainButton.show();
 });
 btn5.addEventListener("click", function(){
     item5 = "5";
     MainBtn += 1;
+    tg.MainButton.setText("VIEW ORDER");
+    tg.MainButton.show();
 });
 btn6.addEventListener("click", function(){
     item6 = "6";
     MainBtn += 1;
+    tg.MainButton.setText("VIEW ORDER");
+    tg.MainButton.show();
 });
 
 let volumeBtn1 = 0;
@@ -70,6 +75,8 @@ let product3 = document.getElementById("product3");
 let product4 = document.getElementById("product4");
 let product5 = document.getElementById("product5");
 let product6 = document.getElementById("product6");
+//     if(MainBtn == 0){
+//         tg.MainButton.hide()
 
 
 document.getElementById("btn1").onclick = function(){
