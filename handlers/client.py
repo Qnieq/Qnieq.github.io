@@ -24,7 +24,7 @@ async def buy_process(web_app_message):
                            currency="rub",
                            need_email=True,
                            need_phone_number=False,
-                           prices=PRICE[f'{web_app_message.web_app_data.data}'],
+                           prices=PRICE[f'{web_app_message.web_app_data.data}']*web_app_message.web_app_data.data,
                            start_parameter='example',
                            payload='some_invoice')
 
