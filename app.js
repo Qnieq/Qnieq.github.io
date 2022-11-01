@@ -400,8 +400,7 @@ document.getElementById("btn6").onclick = function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    tg.sendData(item);
-    tg.sendData(volumeBtn1);
+    tg.sendData(item, volumeBtn1);
 });
 
 let usercard = document.getElementById("usercard");
