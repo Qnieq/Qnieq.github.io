@@ -5,6 +5,16 @@ tg.expand()
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
+let MainBtn = 0;
+function(){
+    if(MainBtn == 0){
+        tg.MainButton.hide()
+    } else {
+        tg.MainButton.setText("VIEW ORDER");
+        tg.MainButton.show();
+    }
+}
+
 let item1 = "";
 let item2 = "";
 let item3 = "";
@@ -22,64 +32,28 @@ let btn5 = document.getElementById("btn5");
 let btn6 = document.getElementById("btn6");
 
 btn1.addEventListener("click", function(){
-    if (tg.MainButton.isVisible){
-        tg.MainButton.hide();
-    }
-    else{
-        tg.MainButton.setText("VIEW ORDER");
-        item1 = "1";
-        tg.MainButton.show();
-    }
+    item1 = "1";
+    MainBtn += 1;
 });
 btn2.addEventListener("click", function(){
-    if (tg.MainButton.isVisible){
-        tg.MainButton.hide();
-    }
-    else{
-        tg.MainButton.setText("VIEW ORDER");
-        item2 = "2";
-        tg.MainButton.show();
-    }
+    item2 = "2";
+    MainBtn += 1;
 });
 btn3.addEventListener("click", function(){
-    if (tg.MainButton.isVisible){
-        tg.MainButton.hide();
-    }
-    else{
-        tg.MainButton.setText("VIEW ORDER");
-        item3 = "3";
-        tg.MainButton.show();
-    }
+    item3 = "3";
+    MainBtn += 1;
 });
 btn4.addEventListener("click", function(){
-    if (tg.MainButton.isVisible){
-        tg.MainButton.hide();
-    }
-    else{
-        tg.MainButton.setText("VIEW ORDER");
-        item4 = "4";
-        tg.MainButton.show();
-    }
+    item4 = "4";
+    MainBtn += 1;
 });
 btn5.addEventListener("click", function(){
-    if (tg.MainButton.isVisible){
-        tg.MainButton.hide();
-    }
-    else{
-        tg.MainButton.setText("VIEW ORDER");
-        item5 = "5";
-        tg.MainButton.show();
-    }
+    item5 = "5";
+    MainBtn += 1;
 });
 btn6.addEventListener("click", function(){
-    if (tg.MainButton.isVisible){
-        tg.MainButton.hide();
-    }
-    else{
-        tg.MainButton.setText("VIEW ORDER");
-        item6 = "6";
-        tg.MainButton.show();
-    }
+    item6 = "6";
+    MainBtn += 1;
 });
 
 let volumeBtn1 = 0;
