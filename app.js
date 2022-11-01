@@ -5,7 +5,12 @@ tg.expand()
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
-let item = "";
+let item1 = "";
+let item2 = "";
+let item3 = "";
+let item4 = "";
+let item5 = "";
+let item6 = "";
 
 
 
@@ -22,7 +27,7 @@ btn1.addEventListener("click", function(){
     }
     else{
         tg.MainButton.setText("VIEW ORDER");
-        item = "1";
+        item1 = "1";
         tg.MainButton.show();
     }
 });
@@ -32,7 +37,7 @@ btn2.addEventListener("click", function(){
     }
     else{
         tg.MainButton.setText("VIEW ORDER");
-        item = "2";
+        item2 = "2";
         tg.MainButton.show();
     }
 });
@@ -42,7 +47,7 @@ btn3.addEventListener("click", function(){
     }
     else{
         tg.MainButton.setText("VIEW ORDER");
-        item = "3";
+        item3 = "3";
         tg.MainButton.show();
     }
 });
@@ -52,7 +57,7 @@ btn4.addEventListener("click", function(){
     }
     else{
         tg.MainButton.setText("VIEW ORDER");
-        item = "4";
+        item4 = "4";
         tg.MainButton.show();
     }
 });
@@ -62,7 +67,7 @@ btn5.addEventListener("click", function(){
     }
     else{
         tg.MainButton.setText("VIEW ORDER");
-        item = "5";
+        item5 = "5";
         tg.MainButton.show();
     }
 });
@@ -72,7 +77,7 @@ btn6.addEventListener("click", function(){
     }
     else{
         tg.MainButton.setText("VIEW ORDER");
-        item = "6";
+        item6 = "6";
         tg.MainButton.show();
     }
 });
@@ -400,7 +405,7 @@ document.getElementById("btn6").onclick = function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    tg.sendData(item+"|"+volumeBtn1);
+    tg.sendData(item1+"|"+volumeBtn1 + "/" + item2+"|"+volumeBtn2 + "/" + item3+"|"+volumeBtn3 + "/" + item4+"|"+volumeBtn4 + "/" + item5+"|"+volumeBtn5 + "/" + item6+"|"+volumeBtn6);
 });
 
 
