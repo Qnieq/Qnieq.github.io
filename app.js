@@ -415,24 +415,8 @@ document.getElementById("btn6").onclick = function(){
 
 }
 
-
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    tg.sendData(item1+"|"+volumeBtn1 + " / " + item2+"|"+volumeBtn2 + " / " + item3+"|"+volumeBtn3 + " / " + item4+"|"+volumeBtn4 + " / " + item5+"|"+volumeBtn5 + " / " + item6+"|"+volumeBtn6);
-});
-
-
-let usercard = document.getElementById("usercard");
-
-let p = document.createElement("p");
-
-p.innerText = `${tg.initDataUnsafe.user.first_name}
-${tg.initDataUnsafe.user.last_name}`;
-
-usercard.appendChild(p);
-
-
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    tg.sendData(item1+"|"+volumeBtn1+" / " + item2+"|"+volumeBtn2+" / "+item3+"|"+volumeBtn3+" / "+item4+"|"+volumeBtn4+" / "+item5+"|"+volumeBtn5+" / "+item6+"|"+volumeBtn6);
+    tg.sendData(item1+"|"+volumeBtn1+" / "+item2+"|"+volumeBtn2+" / "+item3+"|"+volumeBtn3+" / "+item4+"|"+volumeBtn4+" / "+item5+"|"+volumeBtn5+" / "+item6+"|"+volumeBtn6);
 });
 
 
