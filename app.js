@@ -6,14 +6,14 @@ tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
 let MainBtn = 0;
-function(){
-    if(MainBtn == 0){
-        tg.MainButton.hide()
-    } else {
-        tg.MainButton.setText("VIEW ORDER");
-        tg.MainButton.show();
-    }
+
+if(MainBtn == 0){
+    tg.MainButton.hide()
+} else {
+    tg.MainButton.setText("VIEW ORDER");
+    tg.MainButton.show();
 }
+
 
 let item1 = "";
 let item2 = "";
