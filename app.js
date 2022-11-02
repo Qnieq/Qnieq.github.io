@@ -10,7 +10,7 @@ let MainBtn = 0;
 let item1 = "burger";
 let item2 = "fries";
 let item3 = "nuggets";
-let item4 = "sause";
+let item4 = "sauce";
 let item5 = "cocktails";
 let item6 = "ice_cream";
 
