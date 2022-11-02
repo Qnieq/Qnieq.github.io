@@ -7,14 +7,19 @@ tg.MainButton.color = '#2cab37';
 
 let MainBtn = 0;
 
-let item1 = "none";
-let item2 = "none";
-let item3 = "none";
-let item4 = "none";
-let item5 = "none";
-let item6 = "none";
+let item1 = "burger";
+let item2 = "fries";
+let item3 = "nuggets";
+let item4 = "sause";
+let item5 = "cocktails";
+let item6 = "ice_cream";
 
-
+let price_item1 = "10000"
+let price_item1 = "20000"
+let price_item1 = "15000"
+let price_item1 = "30000"
+let price_item1 = "20000"
+let price_item1 = "10000"
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
@@ -24,7 +29,6 @@ let btn5 = document.getElementById("btn5");
 let btn6 = document.getElementById("btn6");
 
 btn1.addEventListener("click", function(){
-    item1 = "burger";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
@@ -32,7 +36,6 @@ btn1.addEventListener("click", function(){
     }
 });
 btn2.addEventListener("click", function(){
-    item2 = "fries";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
@@ -41,7 +44,6 @@ btn2.addEventListener("click", function(){
 
 });
 btn3.addEventListener("click", function(){
-    item3 = "nuggets";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
@@ -49,7 +51,6 @@ btn3.addEventListener("click", function(){
     }
 });
 btn4.addEventListener("click", function(){
-    item4 = "sause";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
@@ -57,7 +58,6 @@ btn4.addEventListener("click", function(){
     }
 });
 btn5.addEventListener("click", function(){
-    item5 = "cocktails";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
@@ -65,7 +65,6 @@ btn5.addEventListener("click", function(){
     }
 });
 btn6.addEventListener("click", function(){
-    item6 = "ice_cream";
     MainBtn += 1;
     if(MainBtn >= 1){
         tg.MainButton.setText("VIEW ORDER");
@@ -416,7 +415,7 @@ document.getElementById("btn6").onclick = function(){
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    tg.sendData(item1+"="+volumeBtn1+" / "+item2+"="+volumeBtn2+" / "+item3+"="+volumeBtn3+" / "+item4+"="+volumeBtn4+" / "+item5+"="+volumeBtn5+" / "+item6+"="+volumeBtn6);
+    tg.sendData(item1+"="+volumeBtn1*price_item1+" / "+item2+"="+volumeBtn2*price_item2+" / "+item3+"="+volumeBtn3*price_item3+" / "+item4+"="+volumeBtn4*price_item4+" / "+item5+"="+volumeBtn5*price_item5+" / "+item6+"="+volumeBtn6*price_item6);
 });
 
 
