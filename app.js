@@ -14,13 +14,6 @@ let item4 = "sauce";
 let item5 = "cocktails";
 let item6 = "ice_cream";
 
-let price_item1 = 10000;
-let price_item2 = 20000;
-let price_item3 = 15000;
-let price_item4 = 30000;
-let price_item5 = 20000;
-let price_item6 = 10000;
-
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
@@ -415,10 +408,10 @@ document.getElementById("btn6").onclick = function(){
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    tg.sendData(item1+"="+volumeBtn1*price_item1+":"+volumeBtn1+
-                " / "+item2+"="+volumeBtn2*price_item2+":"+volumeBtn2+
-                " / "+item3+"="+volumeBtn3*price_item3+":"+volumeBtn3+
-                " / "+item4+"="+volumeBtn4*price_item4+":"+volumeBtn4+
-                " / "+item5+"="+volumeBtn5*price_item5+":"+volumeBtn5+
-                " / "+item6+"="+volumeBtn6*price_item6+":"+volumeBtn6);
+    tg.sendData(item1+"="+volumeBtn1+
+                " / "+item2+"="+volumeBtn2+
+                " / "+item3+"="+volumeBtn3+
+                " / "+item4+"="+volumeBtn4+
+                " / "+item5+"="+volumeBtn5+
+                " / "+item6+"="+volumeBtn6);
 });
