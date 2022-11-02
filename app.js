@@ -15,11 +15,11 @@ let item5 = "cocktails";
 let item6 = "ice_cream";
 
 let price_item1 = 10000;
-let price_item1 = 20000;
-let price_item1 = 15000;
-let price_item1 = 30000;
-let price_item1 = 20000;
-let price_item1 = 10000;
+let price_item2 = 20000;
+let price_item3 = 15000;
+let price_item4 = 30000;
+let price_item5 = 20000;
+let price_item6 = 10000;
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
