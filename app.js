@@ -417,13 +417,3 @@ document.getElementById("btn6").onclick = function(){
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
     tg.sendData(item1+"="+volumeBtn1*price_item1+" / "+item2+"="+volumeBtn2*price_item2+" / "+item3+"="+volumeBtn3*price_item3+" / "+item4+"="+volumeBtn4*price_item4+" / "+item5+"="+volumeBtn5*price_item5+" / "+item6+"="+volumeBtn6*price_item6);
 });
-
-
-let usercard = document.getElementById("usercard");
-
-let p = document.createElement("p");
-
-p.innerText = `${tg.initDataUnsafe.user.first_name}
-${tg.initDataUnsafe.user.last_name}`;
-
-usercard.appendChild(p);
