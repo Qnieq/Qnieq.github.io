@@ -14,12 +14,12 @@ let item4 = "sause";
 let item5 = "cocktails";
 let item6 = "ice_cream";
 
-let price_item1 = "10000"
-let price_item1 = "20000"
-let price_item1 = "15000"
-let price_item1 = "30000"
-let price_item1 = "20000"
-let price_item1 = "10000"
+let price_item1 = 10000;
+let price_item1 = 20000;
+let price_item1 = 15000;
+let price_item1 = 30000;
+let price_item1 = 20000;
+let price_item1 = 10000;
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
