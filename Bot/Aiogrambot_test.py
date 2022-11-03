@@ -1,5 +1,5 @@
 from aiogram import executor
-from bot_cfg import dp
+from bot_cfg import dp, Config
 from handlers import client
 
 client.register_hadlers_cl(dp)
